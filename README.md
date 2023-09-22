@@ -7,9 +7,6 @@ This repository contains the code and documentation for our university project t
 - [About](#about)
 - [Features](#features)
 - [System Architecture](#system-architecture)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## About
