@@ -1,6 +1,6 @@
 # Hexapod Project
 
-This repository contains the code and documentation for our university project to revive a hexapod robot using the Robot Operating System (ROS).
+This repository contains the code and documentation for our university project to control a hexapod robot using the Robot Operating System (ROS).
 
 ## Table of Contents
 
