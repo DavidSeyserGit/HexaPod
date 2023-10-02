@@ -16,10 +16,3 @@ Our project aims to revive a hexapod robot using ROS, enabling it to perform var
 ## Features
 
 - **ROS Integration**: Utilizing ROS for communication, control, and coordination of the hexapod robot.
-
-## System Architecture
-
-![System Architecture](path/to/your/architecture.png)
-
-Provide an overview of your system architecture, detailing the nodes, topics, and interactions within the ROS ecosystem.
-
