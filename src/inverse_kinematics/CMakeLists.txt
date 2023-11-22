@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(motorcontroller)
+project(inverse_kinematics)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -12,9 +12,10 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
-
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
+
+
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
@@ -101,9 +102,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/../DynamixelSDK/ros/dynamixel_sdk/include
-#  LIBRARIES motorcontroller
-  CATKIN_DEPENDS roscpp std_msgs
+#  INCLUDE_DIRS include
+#  LIBRARIES inverse_kinematics
+#  CATKIN_DEPENDS roscpp std_msgs
 #  DEPENDS system_lib
 )
 
@@ -116,12 +117,11 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
-  ${PROJECT_SOURCE_DIR}/../DynamixelSDK/ros/dynamixel_sdk/include
 )
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/motorcontroller.cpp
+#   src/${PROJECT_NAME}/inverse_kinematics.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -132,12 +132,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(motorcontroller src/motorcontroller.cpp)
-target_link_libraries(motorcontroller ${catkin_LIBRARIES})
-find_package(dynamixel_sdk REQUIRED)
-include_directories(${dynamixel_sdk_INCLUDE_DIRS})
-target_link_libraries(motorcontroller ${dynamixel_sdk_LIBRARIES})
-link_directories(${PROJECT_SOURCE_DIR}/../DynamixelSDK/ros/dynamixel_sdk/lib)
+# add_executable(${PROJECT_NAME}_node src/inverse_kinematics_node.cpp)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -149,10 +145,11 @@ link_directories(${PROJECT_SOURCE_DIR}/../DynamixelSDK/ros/dynamixel_sdk/lib)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(${PROJECT_NAME}
-  ${catkin_LIBRARIES}
-)
-
+# target_link_libraries(${PROJECT_NAME}_node
+#   ${catkin_LIBRARIES}
+# )
+add_executable(calculation src/calculation.cpp)
+target_link_libraries(calculation ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
@@ -200,7 +197,7 @@ target_link_libraries(${PROJECT_NAME}
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_motorcontroller.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_inverse_kinematics.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()
