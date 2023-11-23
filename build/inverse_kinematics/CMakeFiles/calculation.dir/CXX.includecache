@@ -6,10 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/david/Desktop/HexaPod/src/inverse_kinematics/src/calculation.cpp
+/home/david/Desktop/HexaPod/src/inverse_kinematics/src/calculation.cpp
 ros/ros.h
 -
-std_msgs/Int32MultiArray.h
+std_msgs/Int16MultiArray.h
+-
+cmath
 -
 
 /opt/ros/noetic/include/ros/advertise_options.h
@@ -662,7 +664,7 @@ ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
 
-/opt/ros/noetic/include/std_msgs/Int32MultiArray.h
+/opt/ros/noetic/include/std_msgs/Int16MultiArray.h
 string
 -
 vector

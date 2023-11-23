@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/c/Users/david/Desktop/HexaPod/src/inverse_kinematics
+# Install script for directory: /home/david/Desktop/HexaPod/src/inverse_kinematics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/users/david/Desktop/HexaPod/install")
+  set(CMAKE_INSTALL_PREFIX "/home/david/Desktop/HexaPod/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/c/Users/david/Desktop/HexaPod/build/inverse_kinematics/catkin_generated/installspace/inverse_kinematics.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/david/Desktop/HexaPod/build/inverse_kinematics/catkin_generated/installspace/inverse_kinematics.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/inverse_kinematics/cmake" TYPE FILE FILES
-    "/mnt/c/Users/david/Desktop/HexaPod/build/inverse_kinematics/catkin_generated/installspace/inverse_kinematicsConfig.cmake"
-    "/mnt/c/Users/david/Desktop/HexaPod/build/inverse_kinematics/catkin_generated/installspace/inverse_kinematicsConfig-version.cmake"
+    "/home/david/Desktop/HexaPod/build/inverse_kinematics/catkin_generated/installspace/inverse_kinematicsConfig.cmake"
+    "/home/david/Desktop/HexaPod/build/inverse_kinematics/catkin_generated/installspace/inverse_kinematicsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/inverse_kinematics" TYPE FILE FILES "/mnt/c/Users/david/Desktop/HexaPod/src/inverse_kinematics/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/inverse_kinematics" TYPE FILE FILES "/home/david/Desktop/HexaPod/src/inverse_kinematics/package.xml")
 endif()
 

@@ -67,14 +67,14 @@ set(motorcontroller_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(motorcontroller_SOURCE_PREFIX /mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller)
-  set(motorcontroller_DEVEL_PREFIX /mnt/c/users/david/Desktop/HexaPod/devel)
+  set(motorcontroller_SOURCE_PREFIX /home/david/Desktop/HexaPod/src/motorcontroller)
+  set(motorcontroller_DEVEL_PREFIX /home/david/Desktop/HexaPod/devel)
   set(motorcontroller_INSTALL_PREFIX "")
   set(motorcontroller_PREFIX ${motorcontroller_DEVEL_PREFIX})
 else()
   set(motorcontroller_SOURCE_PREFIX "")
   set(motorcontroller_DEVEL_PREFIX "")
-  set(motorcontroller_INSTALL_PREFIX /mnt/c/users/david/Desktop/HexaPod/install)
+  set(motorcontroller_INSTALL_PREFIX /home/david/Desktop/HexaPod/install)
   set(motorcontroller_PREFIX ${motorcontroller_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /mnt/c/users/david/Desktop/HexaPod/install/lib;/mnt/e/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/david/Desktop/HexaPod/install/lib;/home/david/Desktop/bootcamp_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

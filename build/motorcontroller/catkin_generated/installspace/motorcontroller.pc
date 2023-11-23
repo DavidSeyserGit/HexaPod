@@ -1,4 +1,4 @@
-prefix=/mnt/c/users/david/Desktop/HexaPod/install
+prefix=/home/david/Desktop/HexaPod/install
 
 Name: motorcontroller
 Description: Description of motorcontroller

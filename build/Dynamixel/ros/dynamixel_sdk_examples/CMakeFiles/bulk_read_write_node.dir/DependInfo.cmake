@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk_examples/src/bulk_read_write_node.cpp" "/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/bulk_read_write_node.dir/src/bulk_read_write_node.cpp.o"
+  "/home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk_examples/src/bulk_read_write_node.cpp" "/home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/bulk_read_write_node.dir/src/bulk_read_write_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,15 +17,15 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/mnt/c/users/david/Desktop/HexaPod/devel/include"
-  "/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include"
+  "/home/david/Desktop/HexaPod/devel/include"
+  "/home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/DependInfo.cmake"
+  "/home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/sync_read_write_node"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/sync_read_write_node.pdb"
+  "/home/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/sync_read_write_node"
+  "/home/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/sync_read_write_node.pdb"
   "CMakeFiles/sync_read_write_node.dir/src/sync_read_write_node.cpp.o"
 )
 
