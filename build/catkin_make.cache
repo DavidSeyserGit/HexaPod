@@ -1,0 +1,2 @@
+DynamixelSDK/ros/dynamixel_sdk:inverse_kinematics:motorcontroller
+-DCATKIN_DEVEL_PREFIX=/mnt/c/Users/david/Desktop/HexaPod/devel -DCMAKE_INSTALL_PREFIX=/mnt/c/Users/david/Desktop/HexaPod/install -G Unix Makefiles
