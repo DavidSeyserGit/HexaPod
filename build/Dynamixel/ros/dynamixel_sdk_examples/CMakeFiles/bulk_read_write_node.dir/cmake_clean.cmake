@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/bulk_read_write_node"
-  "/home/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/bulk_read_write_node.pdb"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/bulk_read_write_node"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/bulk_read_write_node.pdb"
   "CMakeFiles/bulk_read_write_node.dir/src/bulk_read_write_node.cpp.o"
 )
 

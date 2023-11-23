@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/david/Desktop/HexaPod/devel/lib/inverse_kinematics/calculation"
-  "/home/david/Desktop/HexaPod/devel/lib/inverse_kinematics/calculation.pdb"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/inverse_kinematics/calculation"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/inverse_kinematics/calculation.pdb"
   "CMakeFiles/calculation.dir/src/calculation.cpp.o"
 )
 

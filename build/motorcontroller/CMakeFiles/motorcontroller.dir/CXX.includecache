@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Desktop/HexaPod/src/motorcontroller/src/motorcontroller.cpp
+/mnt/c/users/david/Desktop/HexaPod/src/motorcontroller/src/motorcontroller.cpp
 ros/ros.h
 -
 std_msgs/Int32MultiArray.h

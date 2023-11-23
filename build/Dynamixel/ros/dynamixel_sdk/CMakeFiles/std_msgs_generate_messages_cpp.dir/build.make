@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/Desktop/HexaPod/src
+CMAKE_SOURCE_DIR = /mnt/c/users/david/Desktop/HexaPod/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/Desktop/HexaPod/build
+CMAKE_BINARY_DIR = /mnt/c/users/david/Desktop/HexaPod/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/build:
 .PHONY : Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/david/Desktop/HexaPod/src /home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk /home/david/Desktop/HexaPod/build /home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk /home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/users/david/Desktop/HexaPod/src /mnt/c/users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk /mnt/c/users/david/Desktop/HexaPod/build /mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk /mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Dynamixel/ros/dynamixel_sdk/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

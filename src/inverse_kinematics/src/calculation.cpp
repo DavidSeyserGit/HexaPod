@@ -2,24 +2,26 @@
 #include <std_msgs/Int16MultiArray.h>
 #include <cmath> 
 
-namespace gait{
+#define LEG_COUNT_FOR_GAIT 3
+
+namespace gait {
 
     typedef struct {
         double x, y, z;
-    }GoalPositions;
+    } GoalPositions;
 
-    std::vector<GoalPositions> calculateTripodGaitPositions(double step_length, double step_height, double body_width, double cycle_progress) {
-        std::vector<GoalPositions> positions(6);
-        //implementation of gait control
-        return positions;
+    void calculateTripodGaitPositions(GoalPositions positions[LEG_COUNT_FOR_GAIT], double step_length, double step_height, double body_width, double cycle_progress) {
+        // Fill the positions array with calculated values
+        // implementation of gait control
     }
 }
 
-namespace inverse_kinematics{
+
+namespace inverse_kinematics {
 
     typedef struct {
         double theta1, theta2, theta3;
-    }JointAngles;
+    } JointAngles;
 
     JointAngles calculateIK(double x, double y, double z, double l1, double l2, double l3) 
     {
@@ -58,20 +60,22 @@ int main(int argc, char **argv)
 
         double x, y, z, l1, l2, l3, step_length, step_height, body_width; //placeholder, needs to be read out from node (similar to MSROB Homework 2)
         int cycle_progress = 0; // value from 0 - 1 
-        
-        std::vector<gait::GoalPositions> leg_positions = gait::calculateTripodGaitPositions(step_length, step_height, body_width, cycle_progress);
 
-        for (size_t i = 0; i < leg_positions.size(); ++i) {
+        gait::GoalPositions leg_positions[LEG_COUNT_FOR_GAIT];
+        gait::calculateTripodGaitPositions(leg_positions, step_length, step_height, body_width, cycle_progress);
+
+        for (int i = 0; i < LEG_COUNT_FOR_GAIT; ++i) {
             inverse_kinematics::JointAngles angles = inverse_kinematics::calculateIK(leg_positions[i].x, leg_positions[i].y, leg_positions[i].z, l1, l2, l3);
 
-        goal_pos.data.push_back(static_cast<int16_t>(angles.theta1));
-        goal_pos.data.push_back(static_cast<int16_t>(angles.theta2));
-        goal_pos.data.push_back(static_cast<int16_t>(angles.theta3));
-        pub.publish(goal_pos);
+            goal_pos.data.push_back(static_cast<int16_t>(angles.theta1));
+            goal_pos.data.push_back(static_cast<int16_t>(angles.theta2));
+            goal_pos.data.push_back(static_cast<int16_t>(angles.theta3));
+            pub.publish(goal_pos);
         }
-    }   
-    ros::spinOnce();
-    loop_rate.sleep();
+
+        ros::spinOnce();
+        loop_rate.sleep();
+    }
 
     return 0;
 }
