@@ -8,20 +8,20 @@ const float PROTOCOL_VERSION = 1.0;
 const int BAUDRATE = 57600;
 const char* DEVICENAME = "/dev/ttyUSB0"; 
 
-dynamixel::PortHandler *portHandler;
-dynamixel::PacketHandler *packetHandler;   
+dynamixel::PortHandler *portHandler = nullptr;
+dynamixel::PacketHandler *packetHandler = nullptr;   
 
 void motorCallback(const std_msgs::Int32MultiArray::ConstPtr& msg)
 {
     int dxl_comm_result = COMM_TX_FAIL;
-
     for (size_t i = 0; i < DXL_ID.size(); i++)
     {
         uint16_t dxl_goal_position = msg->data[i]; //value between 0 and 360 degrees
+
         dxl_comm_result = packetHandler->write2ByteTxRx(portHandler, DXL_ID[i], ADDR_GOAL_POSITION, dxl_goal_position);
         if (dxl_comm_result != COMM_SUCCESS)
         {
-            ROS_ERROR("Failed to write goal position to Dynamixel ID: %d", DXL_ID[i]);
+            ROS_ERROR("Failed to write goal position to Dynamixel ID");
         }
     }
 }
@@ -31,8 +31,14 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "motorcontroller");
     ros::NodeHandle nh;
 
-    portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
-    packetHandler = dynamixel::PacketHandler::getPacketHandler(PROTOCOL_VERSION);
+    if(portHandler == nullptr){
+        portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
+    }
+
+    if(packetHandler == nullptr){
+        packetHandler = dynamixel::PacketHandler::getPacketHandler(PROTOCOL_VERSION);
+    }
+
     portHandler->openPort();
     portHandler->setBaudRate(BAUDRATE);
 
