@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/c/Users/david/Desktop/HexaPod/install")
+  set(CMAKE_INSTALL_PREFIX "/mnt/c/users/david/Desktop/HexaPod/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,38 +49,38 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/david/Desktop/HexaPod/install/_setup_util.py")
+   "/mnt/c/users/david/Desktop/HexaPod/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/david/Desktop/HexaPod/install" TYPE PROGRAM FILES "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/mnt/c/users/david/Desktop/HexaPod/install" TYPE PROGRAM FILES "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/david/Desktop/HexaPod/install/env.sh")
+   "/mnt/c/users/david/Desktop/HexaPod/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/david/Desktop/HexaPod/install" TYPE PROGRAM FILES "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/mnt/c/users/david/Desktop/HexaPod/install" TYPE PROGRAM FILES "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/david/Desktop/HexaPod/install/setup.bash;/mnt/c/Users/david/Desktop/HexaPod/install/local_setup.bash")
+   "/mnt/c/users/david/Desktop/HexaPod/install/setup.bash;/mnt/c/users/david/Desktop/HexaPod/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/david/Desktop/HexaPod/install" TYPE FILE FILES
+file(INSTALL DESTINATION "/mnt/c/users/david/Desktop/HexaPod/install" TYPE FILE FILES
     "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/setup.bash"
     "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/local_setup.bash"
     )
@@ -88,14 +88,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/david/Desktop/HexaPod/install/setup.sh;/mnt/c/Users/david/Desktop/HexaPod/install/local_setup.sh")
+   "/mnt/c/users/david/Desktop/HexaPod/install/setup.sh;/mnt/c/users/david/Desktop/HexaPod/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/david/Desktop/HexaPod/install" TYPE FILE FILES
+file(INSTALL DESTINATION "/mnt/c/users/david/Desktop/HexaPod/install" TYPE FILE FILES
     "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/setup.sh"
     "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/local_setup.sh"
     )
@@ -103,14 +103,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/david/Desktop/HexaPod/install/setup.zsh;/mnt/c/Users/david/Desktop/HexaPod/install/local_setup.zsh")
+   "/mnt/c/users/david/Desktop/HexaPod/install/setup.zsh;/mnt/c/users/david/Desktop/HexaPod/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/david/Desktop/HexaPod/install" TYPE FILE FILES
+file(INSTALL DESTINATION "/mnt/c/users/david/Desktop/HexaPod/install" TYPE FILE FILES
     "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/setup.zsh"
     "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/local_setup.zsh"
     )
@@ -118,20 +118,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/mnt/c/Users/david/Desktop/HexaPod/install/.rosinstall")
+   "/mnt/c/users/david/Desktop/HexaPod/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/mnt/c/Users/david/Desktop/HexaPod/install" TYPE FILE FILES "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/mnt/c/users/david/Desktop/HexaPod/install" TYPE FILE FILES "/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/mnt/c/Users/david/Desktop/HexaPod/build/gtest/cmake_install.cmake")
-  include("/mnt/c/Users/david/Desktop/HexaPod/build/DynamixelSDK/ros/dynamixel_sdk/cmake_install.cmake")
+  include("/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/cmake_install.cmake")
+  include("/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples/cmake_install.cmake")
   include("/mnt/c/Users/david/Desktop/HexaPod/build/inverse_kinematics/cmake_install.cmake")
   include("/mnt/c/Users/david/Desktop/HexaPod/build/motorcontroller/cmake_install.cmake")
 

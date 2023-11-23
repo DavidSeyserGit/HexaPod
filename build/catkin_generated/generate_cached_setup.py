@@ -19,7 +19,7 @@ except ImportError:
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/mnt/c/Users/david/Desktop/HexaPod/devel/env.sh')
+code = generate_environment_script('/mnt/c/users/david/Desktop/HexaPod/devel/env.sh')
 
 output_filename = '/mnt/c/Users/david/Desktop/HexaPod/build/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:

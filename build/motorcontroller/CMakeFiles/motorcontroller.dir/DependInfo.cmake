@@ -20,12 +20,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/../DynamixelSDK/ros/dynamixel_sdk/include"
-  "/mnt/c/Users/david/Desktop/HexaPod/src/DynamixelSDK/ros/dynamixel_sdk/include"
+  "/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/Users/david/Desktop/HexaPod/build/DynamixelSDK/ros/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/DependInfo.cmake"
+  "/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

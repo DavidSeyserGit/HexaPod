@@ -1,8 +1,8 @@
-prefix=/mnt/c/Users/david/Desktop/HexaPod/devel
+prefix=/mnt/c/users/david/Desktop/HexaPod/devel
 
 Name: dynamixel_sdk_examples
 Description: Description of dynamixel_sdk_examples
 Version: 3.7.51
-Cflags: -I/mnt/c/Users/david/Desktop/HexaPod/devel/include
+Cflags: -I/mnt/c/users/david/Desktop/HexaPod/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp std_msgs dynamixel_sdk

@@ -1,8 +1,8 @@
-prefix=/mnt/c/Users/david/Desktop/HexaPod/devel
+prefix=/mnt/c/users/david/Desktop/HexaPod/devel
 
 Name: dynamixel_sdk
 Description: Description of dynamixel_sdk
 Version: 3.7.51
-Cflags: -I/mnt/c/Users/david/Desktop/HexaPod/src/DynamixelSDK/ros/dynamixel_sdk/include
+Cflags: -I/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include
 Libs: -L${prefix}/lib -ldynamixel_sdk
 Requires: roscpp rospy

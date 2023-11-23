@@ -1,5 +1,6 @@
 #include <ros/ros.h>
 #include <std_msgs/Int32MultiArray.h>
+
 #include <dynamixel_sdk/dynamixel_sdk.h>
 
 const std::vector<uint8_t> DXL_ID = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -31,20 +32,20 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "motorcontroller");
     ros::NodeHandle nh;
 
-    if(portHandler == nullptr){
-        portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
-    }
+    //if(portHandler == nullptr){
+    //    portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
+    //}
 
-    if(packetHandler == nullptr){
-        packetHandler = dynamixel::PacketHandler::getPacketHandler(PROTOCOL_VERSION);
-    }
+    //if(packetHandler == nullptr){
+    //    packetHandler = dynamixel::PacketHandler::getPacketHandler(PROTOCOL_VERSION);
+    //}
 
-    portHandler->openPort();
-    portHandler->setBaudRate(BAUDRATE);
+    //portHandler->openPort();
+    //portHandler->setBaudRate(BAUDRATE);
 
     //subscriber implementation for inverse kinematics
 
-    portHandler->closePort();
+    //portHandler->closePort();
 
     return 0;
 }
