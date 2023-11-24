@@ -8,7 +8,7 @@ namespace gait{
         double x, y, z;
     }GoalPositions;
 
-    std::vector<GoalPositions> calculateTripodGaitPositions(double step_length, double step_height, double body_width, double cycle_progress) {
+    std::vector<GoalPositions> calculateTripodGaitPositions(double step_length, double step_height, double body_width, double cycle) {
         std::vector<GoalPositions> positions(6);
         //implementation of gait control
         return positions;
@@ -56,19 +56,7 @@ int main(int argc, char **argv)
         std_msgs::Int16MultiArray goal_pos;
         goal_pos.data.clear();
 
-        double x, y, z, l1, l2, l3, step_length, step_height, body_width; //placeholder, needs to be read out from node (similar to MSROB Homework 2)
-        int cycle_progress = 0; // value from 0 - 1 
-        
-        std::vector<gait::GoalPositions> leg_positions = gait::calculateTripodGaitPositions(step_length, step_height, body_width, cycle_progress);
-
-        for (size_t i = 0; i < leg_positions.size(); ++i) {
-            inverse_kinematics::JointAngles angles = inverse_kinematics::calculateIK(leg_positions[i].x, leg_positions[i].y, leg_positions[i].z, l1, l2, l3);
-
-        goal_pos.data.push_back(static_cast<int16_t>(angles.theta1));
-        goal_pos.data.push_back(static_cast<int16_t>(angles.theta2));
-        goal_pos.data.push_back(static_cast<int16_t>(angles.theta3));
         pub.publish(goal_pos);
-        }
     }   
     ros::spinOnce();
     loop_rate.sleep();

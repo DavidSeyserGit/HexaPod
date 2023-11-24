@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/david/Desktop/HexaPod/devel/lib/python3/dist-packages",
+        "/home/david/Desktop/bootcamp_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/david/Desktop/HexaPod/devel/lib/python3/dist-packages",
+        "/home/david/Desktop/bootcamp_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
