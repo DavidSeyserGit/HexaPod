@@ -23,6 +23,7 @@ To clone the repository and its submodules, use the following command:
 ### Setting Up the Submodule
 After the repository is cloned, the submodules need to be initialized:
 
+    cd HexaPod
     git submodule init
     git submodule update
 
@@ -31,7 +32,6 @@ After the repository is cloned, the submodules need to be initialized:
 After the repository is successfully cloned and the submodules initialized, the devel and build folder must be removed.
 If you are on Linux use the following commands:
 
-    cd Hexpaod 
     rm -rf devel && rm -rf build
 
 The repository is now ready to be compiled.
