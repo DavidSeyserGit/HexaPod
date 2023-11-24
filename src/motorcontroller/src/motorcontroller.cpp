@@ -3,11 +3,11 @@
 
 #include <dynamixel_sdk/dynamixel_sdk.h>
 
-const std::vector<uint8_t> DXL_ID = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 const uint8_t ADDR_GOAL_POSITION = 30;
 const float PROTOCOL_VERSION = 1.0;
 const int BAUDRATE = 57600;
 const char* DEVICENAME = "/dev/ttyUSB0"; 
+const std::vector<uint8_t> DXL_ID = {1, 2, 3, 4, 5, 6, 7, 8, 9}; // need to be changed to a array -> more efficent
 
 dynamixel::PortHandler *portHandler = nullptr;
 dynamixel::PacketHandler *packetHandler = nullptr;   

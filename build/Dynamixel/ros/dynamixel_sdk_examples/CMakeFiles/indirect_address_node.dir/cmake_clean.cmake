@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/indirect_address_node"
-  "/home/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/indirect_address_node.pdb"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/indirect_address_node"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/dynamixel_sdk_examples/indirect_address_node.pdb"
   "CMakeFiles/indirect_address_node.dir/src/indirect_address_node.cpp.o"
 )
 

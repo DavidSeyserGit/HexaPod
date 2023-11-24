@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/david/Desktop/HexaPod/src/inverse_kinematics/src/calculation.cpp
+/mnt/c/users/david/Desktop/HexaPod/src/inverse_kinematics/src/calculation.cpp
 ros/ros.h
 -
 std_msgs/Int16MultiArray.h

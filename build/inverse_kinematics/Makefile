@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/Desktop/HexaPod/src
+CMAKE_SOURCE_DIR = /mnt/c/users/david/Desktop/HexaPod/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/Desktop/HexaPod/build
+CMAKE_BINARY_DIR = /mnt/c/users/david/Desktop/HexaPod/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/HexaPod/build/CMakeFiles /home/david/Desktop/HexaPod/build/inverse_kinematics/CMakeFiles/progress.marks
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/HexaPod/build/CMakeFiles 0
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/users/david/Desktop/HexaPod/build/CMakeFiles /mnt/c/users/david/Desktop/HexaPod/build/inverse_kinematics/CMakeFiles/progress.marks
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/users/david/Desktop/HexaPod/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/clean
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/preinstall
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/preinstall
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 inverse_kinematics/CMakeFiles/calculation.dir/rule:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/CMakeFiles/calculation.dir/rule
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 inverse_kinematics/CMakeFiles/calculation.dir/rule
 .PHONY : inverse_kinematics/CMakeFiles/calculation.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ calculation: inverse_kinematics/CMakeFiles/calculation.dir/rule
 
 # fast build rule for target.
 calculation/fast:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/build
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/build
 .PHONY : calculation/fast
 
 src/calculation.o: src/calculation.cpp.o
@@ -188,7 +188,7 @@ src/calculation.o: src/calculation.cpp.o
 
 # target to build an object file
 src/calculation.cpp.o:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/src/calculation.cpp.o
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/src/calculation.cpp.o
 .PHONY : src/calculation.cpp.o
 
 src/calculation.i: src/calculation.cpp.i
@@ -197,7 +197,7 @@ src/calculation.i: src/calculation.cpp.i
 
 # target to preprocess a source file
 src/calculation.cpp.i:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/src/calculation.cpp.i
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/src/calculation.cpp.i
 .PHONY : src/calculation.cpp.i
 
 src/calculation.s: src/calculation.cpp.s
@@ -206,7 +206,7 @@ src/calculation.s: src/calculation.cpp.s
 
 # target to generate assembly for a file
 src/calculation.cpp.s:
-	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/src/calculation.cpp.s
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(MAKE) -f inverse_kinematics/CMakeFiles/calculation.dir/build.make inverse_kinematics/CMakeFiles/calculation.dir/src/calculation.cpp.s
 .PHONY : src/calculation.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

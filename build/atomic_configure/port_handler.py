@@ -3,7 +3,7 @@
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/src/dynamixel_sdk/port_handler.py'
+python_script = '/mnt/c/users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/src/dynamixel_sdk/port_handler.py'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,

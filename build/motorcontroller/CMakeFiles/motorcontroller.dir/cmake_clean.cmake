@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/david/Desktop/HexaPod/devel/lib/motorcontroller/motorcontroller"
-  "/home/david/Desktop/HexaPod/devel/lib/motorcontroller/motorcontroller.pdb"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/motorcontroller/motorcontroller"
+  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/motorcontroller/motorcontroller.pdb"
   "CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.o"
 )
 

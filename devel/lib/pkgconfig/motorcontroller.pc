@@ -1,8 +1,8 @@
-prefix=/home/david/Desktop/HexaPod/devel
+prefix=/mnt/c/users/david/Desktop/HexaPod/devel
 
 Name: motorcontroller
 Description: Description of motorcontroller
 Version: 0.0.0
-Cflags: -I/home/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/dynamixel_sdk/include
+Cflags: -I/mnt/c/users/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/dynamixel_sdk/include
 Libs: -L${prefix}/lib 
 Requires: roscpp std_msgs

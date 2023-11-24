@@ -2,24 +2,25 @@
 #include <std_msgs/Int16MultiArray.h>
 #include <cmath> 
 
-namespace gait{
+#define LEG_COUNT_FOR_GAIT 3
+
+namespace gait {
 
     typedef struct {
         double x, y, z;
-    }GoalPositions;
+    } GoalPositions;
 
-    std::vector<GoalPositions> calculateTripodGaitPositions(double step_length, double step_height, double body_width, double cycle) {
-        std::vector<GoalPositions> positions(6);
-        //implementation of gait control
-        return positions;
+    void calculateTripodGaitPositions(GoalPositions positions[LEG_COUNT_FOR_GAIT], double step_length, double step_height, double body_width, double cycle_progress) {
+        // implementation of gait control
     }
 }
 
-namespace inverse_kinematics{
+
+namespace inverse_kinematics {
 
     typedef struct {
         double theta1, theta2, theta3;
-    }JointAngles;
+    } JointAngles;
 
     JointAngles calculateIK(double x, double y, double z, double l1, double l2, double l3) 
     {
