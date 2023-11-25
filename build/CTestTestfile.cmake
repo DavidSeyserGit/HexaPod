@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /mnt/c/users/david/Desktop/HexaPod/src
-# Build directory: /mnt/c/users/david/Desktop/HexaPod/build
+# Source directory: /mnt/c/Users/david/Desktop/HexaPod/src
+# Build directory: /mnt/c/Users/david/Desktop/HexaPod/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

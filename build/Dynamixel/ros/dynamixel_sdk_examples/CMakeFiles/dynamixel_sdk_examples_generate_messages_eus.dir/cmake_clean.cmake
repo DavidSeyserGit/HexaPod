@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/manifest.l"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/msg/BulkSetItem.l"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/msg/SetPosition.l"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/msg/SyncSetPosition.l"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/srv/BulkGetItem.l"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/srv/GetPosition.l"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/srv/SyncGetPosition.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/manifest.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/msg/BulkSetItem.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/msg/SetPosition.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/msg/SyncSetPosition.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/srv/BulkGetItem.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/srv/GetPosition.l"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/roseus/ros/dynamixel_sdk_examples/srv/SyncGetPosition.l"
   "CMakeFiles/dynamixel_sdk_examples_generate_messages_eus"
 )
 

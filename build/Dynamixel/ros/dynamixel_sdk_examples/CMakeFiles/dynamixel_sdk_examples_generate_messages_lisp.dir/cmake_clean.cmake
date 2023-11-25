@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/msg/BulkSetItem.lisp"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/msg/SetPosition.lisp"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/msg/SyncSetPosition.lisp"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/srv/BulkGetItem.lisp"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/srv/GetPosition.lisp"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/srv/SyncGetPosition.lisp"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/msg/BulkSetItem.lisp"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/msg/SetPosition.lisp"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/msg/SyncSetPosition.lisp"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/srv/BulkGetItem.lisp"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/srv/GetPosition.lisp"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/share/common-lisp/ros/dynamixel_sdk_examples/srv/SyncGetPosition.lisp"
   "CMakeFiles/dynamixel_sdk_examples_generate_messages_lisp"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/libdynamixel_sdk.pdb"
-  "/mnt/c/users/david/Desktop/HexaPod/devel/lib/libdynamixel_sdk.so"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/lib/libdynamixel_sdk.pdb"
+  "/mnt/c/Users/david/Desktop/HexaPod/devel/lib/libdynamixel_sdk.so"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o"

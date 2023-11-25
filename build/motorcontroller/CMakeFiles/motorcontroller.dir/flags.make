@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"motorcontroller\"
 
-CXX_INCLUDES = -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/mnt/c/users/david/Desktop/HexaPod/src/motorcontroller/../DynamixelSDK/ros/dynamixel_sdk/include -I/mnt/c/users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include 
+CXX_INCLUDES = -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/../DynamixelSDK/ros/dynamixel_sdk/include -I/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include 
 

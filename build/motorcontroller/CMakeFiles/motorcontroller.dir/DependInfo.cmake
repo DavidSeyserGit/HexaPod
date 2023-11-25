@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/users/david/Desktop/HexaPod/src/motorcontroller/src/motorcontroller.cpp" "/mnt/c/users/david/Desktop/HexaPod/build/motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.o"
+  "/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/src/motorcontroller.cpp" "/mnt/c/Users/david/Desktop/HexaPod/build/motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,13 +19,13 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/mnt/c/users/david/Desktop/HexaPod/src/motorcontroller/../DynamixelSDK/ros/dynamixel_sdk/include"
-  "/mnt/c/users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include"
+  "/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/../DynamixelSDK/ros/dynamixel_sdk/include"
+  "/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/DependInfo.cmake"
+  "/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/dynamixel_sdk.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

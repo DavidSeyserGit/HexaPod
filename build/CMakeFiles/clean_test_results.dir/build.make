@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/users/david/Desktop/HexaPod/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/david/Desktop/HexaPod/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/users/david/Desktop/HexaPod/build
+CMAKE_BINARY_DIR = /mnt/c/Users/david/Desktop/HexaPod/build
 
 # Utility rule file for clean_test_results.
 
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /mnt/c/users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/users/david/Desktop/HexaPod/src /mnt/c/users/david/Desktop/HexaPod/src /mnt/c/users/david/Desktop/HexaPod/build /mnt/c/users/david/Desktop/HexaPod/build /mnt/c/users/david/Desktop/HexaPod/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/david/Desktop/HexaPod/src /mnt/c/Users/david/Desktop/HexaPod/src /mnt/c/Users/david/Desktop/HexaPod/build /mnt/c/Users/david/Desktop/HexaPod/build /mnt/c/Users/david/Desktop/HexaPod/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

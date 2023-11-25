@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/users/david/Desktop/HexaPod/src
+CMAKE_SOURCE_DIR = /mnt/c/Users/david/Desktop/HexaPod/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/users/david/Desktop/HexaPod/build
+CMAKE_BINARY_DIR = /mnt/c/Users/david/Desktop/HexaPod/build
 
 # Utility rule file for roscpp_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 
 Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	cd /mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
-	cd /mnt/c/users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/users/david/Desktop/HexaPod/src /mnt/c/users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk /mnt/c/users/david/Desktop/HexaPod/build /mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk /mnt/c/users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/david/Desktop/HexaPod/src /mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk /mnt/c/Users/david/Desktop/HexaPod/build /mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk /mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Dynamixel/ros/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 
