@@ -4,13 +4,13 @@
 
 #define LEG_COUNT_FOR_GAIT 3
 
-namespace gait {
+namespace TripodGait {
 
     typedef struct {
         double x, y, z;
     } GoalPositions;
 
-    void calculateTripodGaitPositions(GoalPositions positions[LEG_COUNT_FOR_GAIT], double step_length, double step_height, double body_width, double cycle_progress) {
+    void calculateGaitPosition(GoalPositions positions[LEG_COUNT_FOR_GAIT], double step_length, double step_height, double body_width, double cycle_progress) {
         // implementation of gait control
         // needs to set cycle_state on change (first set of legs reach goal_pos)
     }
