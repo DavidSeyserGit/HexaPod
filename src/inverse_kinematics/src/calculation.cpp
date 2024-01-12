@@ -27,7 +27,7 @@ namespace inverse_kinematics {
     
     JointAngles calculateIK(double goal_x, double goal_y, double goal_z) // not goal_pos in worldframe but goal_pos of the leg_endeffector
     {
-        JointAngles angles;        
+        JointAngles angles;
         
         //theta 1
         angles.theta1 = atan2(goal_y, goal_x);

@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = '/mnt/c/Users/david/Desktop/HexaPod/src'
+source_root_dir = '/home/david/Desktop/HexaPod/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/mnt/e/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/mnt/e/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/david/Desktop/bootcamp_ws/devel;/home/david/catkin_ws/devel;/home/david/Desktop/HexaPod/devel;/opt/ros/noetic'.split(';') if '/home/david/Desktop/bootcamp_ws/devel;/home/david/catkin_ws/devel;/home/david/Desktop/HexaPod/devel;/opt/ros/noetic' != '' else []

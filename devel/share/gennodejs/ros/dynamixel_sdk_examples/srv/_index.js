@@ -1,12 +1,12 @@
 
 "use strict";
 
-let BulkGetItem = require('./BulkGetItem.js')
 let GetPosition = require('./GetPosition.js')
 let SyncGetPosition = require('./SyncGetPosition.js')
+let BulkGetItem = require('./BulkGetItem.js')
 
 module.exports = {
-  BulkGetItem: BulkGetItem,
   GetPosition: GetPosition,
   SyncGetPosition: SyncGetPosition,
+  BulkGetItem: BulkGetItem,
 };

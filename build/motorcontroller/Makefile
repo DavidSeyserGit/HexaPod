@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/david/Desktop/HexaPod/src
+CMAKE_SOURCE_DIR = /home/david/Desktop/HexaPod/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/david/Desktop/HexaPod/build
+CMAKE_BINARY_DIR = /home/david/Desktop/HexaPod/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/david/Desktop/HexaPod/build/CMakeFiles /mnt/c/Users/david/Desktop/HexaPod/build/motorcontroller/CMakeFiles/progress.marks
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/david/Desktop/HexaPod/build/CMakeFiles 0
+	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/HexaPod/build/CMakeFiles /home/david/Desktop/HexaPod/build/motorcontroller/CMakeFiles/progress.marks
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/Desktop/HexaPod/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/clean
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/preinstall
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/preinstall
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 motorcontroller/CMakeFiles/motorcontroller.dir/rule:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/CMakeFiles/motorcontroller.dir/rule
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f CMakeFiles/Makefile2 motorcontroller/CMakeFiles/motorcontroller.dir/rule
 .PHONY : motorcontroller/CMakeFiles/motorcontroller.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ motorcontroller: motorcontroller/CMakeFiles/motorcontroller.dir/rule
 
 # fast build rule for target.
 motorcontroller/fast:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/build
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/build
 .PHONY : motorcontroller/fast
 
 src/motorcontroller.o: src/motorcontroller.cpp.o
@@ -188,7 +188,7 @@ src/motorcontroller.o: src/motorcontroller.cpp.o
 
 # target to build an object file
 src/motorcontroller.cpp.o:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.o
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.o
 .PHONY : src/motorcontroller.cpp.o
 
 src/motorcontroller.i: src/motorcontroller.cpp.i
@@ -197,7 +197,7 @@ src/motorcontroller.i: src/motorcontroller.cpp.i
 
 # target to preprocess a source file
 src/motorcontroller.cpp.i:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.i
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.i
 .PHONY : src/motorcontroller.cpp.i
 
 src/motorcontroller.s: src/motorcontroller.cpp.s
@@ -206,7 +206,7 @@ src/motorcontroller.s: src/motorcontroller.cpp.s
 
 # target to generate assembly for a file
 src/motorcontroller.cpp.s:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.s
+	cd /home/david/Desktop/HexaPod/build && $(MAKE) -f motorcontroller/CMakeFiles/motorcontroller.dir/build.make motorcontroller/CMakeFiles/motorcontroller.dir/src/motorcontroller.cpp.s
 .PHONY : src/motorcontroller.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

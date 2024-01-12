@@ -132,12 +132,18 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
+
 add_executable(motorcontroller src/motorcontroller.cpp)
 target_link_libraries(motorcontroller ${catkin_LIBRARIES})
+
+#add_executable(motor_test src/motor_test.cpp)
+#target_link_libraries(motor_test ${catkin_LIBRARIES})
+
 find_package(dynamixel_sdk REQUIRED)
 include_directories(${dynamixel_sdk_INCLUDE_DIRS})
 target_link_libraries(motorcontroller ${dynamixel_sdk_LIBRARIES})
 link_directories(${PROJECT_SOURCE_DIR}/../DynamixelSDK/ros/dynamixel_sdk/lib)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use

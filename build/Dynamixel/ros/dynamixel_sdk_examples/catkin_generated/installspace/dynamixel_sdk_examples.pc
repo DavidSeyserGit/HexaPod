@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/david/Desktop/HexaPod/install
+prefix=/home/david/Desktop/HexaPod/install
 
 Name: dynamixel_sdk_examples
 Description: Description of dynamixel_sdk_examples

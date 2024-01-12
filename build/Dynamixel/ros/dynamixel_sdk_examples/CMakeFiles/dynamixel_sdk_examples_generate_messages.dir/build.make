@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/david/Desktop/HexaPod/src
+CMAKE_SOURCE_DIR = /home/david/Desktop/HexaPod/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/david/Desktop/HexaPod/build
+CMAKE_BINARY_DIR = /home/david/Desktop/HexaPod/build
 
 # Utility rule file for dynamixel_sdk_examples_generate_messages.
 
@@ -63,10 +63,10 @@ Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_
 .PHONY : Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/build
 
 Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/clean:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/cmake_clean.cmake
+	cd /home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples && $(CMAKE_COMMAND) -P CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/cmake_clean.cmake
 .PHONY : Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/clean
 
 Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/depend:
-	cd /mnt/c/Users/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/david/Desktop/HexaPod/src /mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk_examples /mnt/c/Users/david/Desktop/HexaPod/build /mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples /mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/david/Desktop/HexaPod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/david/Desktop/HexaPod/src /home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk_examples /home/david/Desktop/HexaPod/build /home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples /home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Dynamixel/ros/dynamixel_sdk_examples/CMakeFiles/dynamixel_sdk_examples_generate_messages.dir/depend
 

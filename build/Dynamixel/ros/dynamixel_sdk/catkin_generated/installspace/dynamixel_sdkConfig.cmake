@@ -67,14 +67,14 @@ set(dynamixel_sdk_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(dynamixel_sdk_SOURCE_PREFIX /mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk)
-  set(dynamixel_sdk_DEVEL_PREFIX /mnt/c/Users/david/Desktop/HexaPod/devel)
+  set(dynamixel_sdk_SOURCE_PREFIX /home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk)
+  set(dynamixel_sdk_DEVEL_PREFIX /home/david/Desktop/HexaPod/devel)
   set(dynamixel_sdk_INSTALL_PREFIX "")
   set(dynamixel_sdk_PREFIX ${dynamixel_sdk_DEVEL_PREFIX})
 else()
   set(dynamixel_sdk_SOURCE_PREFIX "")
   set(dynamixel_sdk_DEVEL_PREFIX "")
-  set(dynamixel_sdk_INSTALL_PREFIX /mnt/c/Users/david/Desktop/HexaPod/install)
+  set(dynamixel_sdk_INSTALL_PREFIX /home/david/Desktop/HexaPod/install)
   set(dynamixel_sdk_PREFIX ${dynamixel_sdk_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /mnt/c/Users/david/Desktop/HexaPod/install/lib;/mnt/e/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/david/Desktop/HexaPod/install/lib;/home/david/Desktop/bootcamp_ws/devel/lib;/home/david/catkin_ws/devel/lib;/home/david/Desktop/HexaPod/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

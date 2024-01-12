@@ -1,4 +1,4 @@
-prefix=/mnt/c/Users/david/Desktop/HexaPod/devel
+prefix=/home/david/Desktop/HexaPod/devel
 
 Name: inverse_kinematics
 Description: Description of inverse_kinematics

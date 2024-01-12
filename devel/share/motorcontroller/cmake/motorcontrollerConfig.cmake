@@ -67,14 +67,14 @@ set(motorcontroller_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(motorcontroller_SOURCE_PREFIX /mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller)
-  set(motorcontroller_DEVEL_PREFIX /mnt/c/Users/david/Desktop/HexaPod/devel)
+  set(motorcontroller_SOURCE_PREFIX /home/david/Desktop/HexaPod/src/motorcontroller)
+  set(motorcontroller_DEVEL_PREFIX /home/david/Desktop/HexaPod/devel)
   set(motorcontroller_INSTALL_PREFIX "")
   set(motorcontroller_PREFIX ${motorcontroller_DEVEL_PREFIX})
 else()
   set(motorcontroller_SOURCE_PREFIX "")
   set(motorcontroller_DEVEL_PREFIX "")
-  set(motorcontroller_INSTALL_PREFIX /mnt/c/Users/david/Desktop/HexaPod/install)
+  set(motorcontroller_INSTALL_PREFIX /home/david/Desktop/HexaPod/install)
   set(motorcontroller_PREFIX ${motorcontroller_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(motorcontroller_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/dynamixel_sdk/include " STREQUAL " ")
+if(NOT "/home/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/dynamixel_sdk/include " STREQUAL " ")
   set(motorcontroller_INCLUDE_DIRS "")
-  set(_include_dirs "/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/dynamixel_sdk/include")
+  set(_include_dirs "/home/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/dynamixel_sdk/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/../Dynamixel/ros/
         message(FATAL_ERROR "Project 'motorcontroller' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'motorcontroller' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'motorcontroller' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/david/Desktop/HexaPod/src/motorcontroller/${idir}'.  ${_report}")
     endif()
     _list_append_unique(motorcontroller_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /mnt/c/Users/david/Desktop/HexaPod/devel/lib;/mnt/e/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/david/Desktop/HexaPod/devel/lib;/home/david/Desktop/bootcamp_ws/devel/lib;/home/david/catkin_ws/devel/lib;/home/david/Desktop/HexaPod/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

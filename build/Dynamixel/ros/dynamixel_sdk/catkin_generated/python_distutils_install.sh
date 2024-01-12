@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk"
+echo_and_run cd "/home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/mnt/c/Users/david/Desktop/HexaPod/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/david/Desktop/HexaPod/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/mnt/c/Users/david/Desktop/HexaPod/install/lib/python3/dist-packages:/mnt/c/Users/david/Desktop/HexaPod/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/mnt/c/Users/david/Desktop/HexaPod/build" \
+    PYTHONPATH="/home/david/Desktop/HexaPod/install/lib/python3/dist-packages:/home/david/Desktop/HexaPod/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/david/Desktop/HexaPod/build" \
     "/usr/bin/python3" \
-    "/mnt/c/Users/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/setup.py" \
+    "/home/david/Desktop/HexaPod/src/Dynamixel/ros/dynamixel_sdk/setup.py" \
      \
-    build --build-base "/mnt/c/Users/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk" \
+    build --build-base "/home/david/Desktop/HexaPod/build/Dynamixel/ros/dynamixel_sdk" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/mnt/c/Users/david/Desktop/HexaPod/install" --install-scripts="/mnt/c/Users/david/Desktop/HexaPod/install/bin"
+    --install-layout=deb --prefix="/home/david/Desktop/HexaPod/install" --install-scripts="/home/david/Desktop/HexaPod/install/bin"

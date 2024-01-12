@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/david/Desktop/HexaPod/src/motorcontroller/src/motorcontroller.cpp
+/home/david/Desktop/HexaPod/src/motorcontroller/src/motorcontroller.cpp
 ros/ros.h
--
-std_msgs/Int16MultiArray.h
--
+/home/david/Desktop/HexaPod/src/motorcontroller/src/ros/ros.h
 dynamixel_sdk/dynamixel_sdk.h
--
+/home/david/Desktop/HexaPod/src/motorcontroller/src/dynamixel_sdk/dynamixel_sdk.h
 
 /opt/ros/noetic/include/dynamixel_sdk/dynamixel_sdk.h
 group_bulk_read.h
@@ -290,10 +288,6 @@ boost/make_shared.hpp
 cstddef
 -
 memory
--
-
-/opt/ros/noetic/include/ros/message_operations.h
-ostream
 -
 
 /opt/ros/noetic/include/ros/message_traits.h
@@ -731,58 +725,6 @@ ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
-
-/opt/ros/noetic/include/std_msgs/Int16MultiArray.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/MultiArrayLayout.h
--
-
-/opt/ros/noetic/include/std_msgs/MultiArrayDimension.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/opt/ros/noetic/include/std_msgs/MultiArrayLayout.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/MultiArrayDimension.h
--
 
 /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h
