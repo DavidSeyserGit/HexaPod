@@ -9,7 +9,7 @@
 /home/david/Desktop/HexaPod/src/inverse_kinematics/src/calculation.cpp
 ros/ros.h
 -
-std_msgs/Int16MultiArray.h
+std_msgs/Float32MultiArray.h
 -
 cmath
 -
@@ -664,7 +664,7 @@ ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
 
-/opt/ros/noetic/include/std_msgs/Int16MultiArray.h
+/opt/ros/noetic/include/std_msgs/Float32MultiArray.h
 string
 -
 vector

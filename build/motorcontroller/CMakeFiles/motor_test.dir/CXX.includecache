@@ -8,10 +8,10 @@
 
 /home/david/Desktop/HexaPod/src/motorcontroller/src/motor_test.cpp
 ros/ros.h
--
-std_msgs/Int16MultiArray.h
--
+/home/david/Desktop/HexaPod/src/motorcontroller/src/ros/ros.h
 dynamixel_sdk/dynamixel_sdk.h
+/home/david/Desktop/HexaPod/src/motorcontroller/src/dynamixel_sdk/dynamixel_sdk.h
+std_msgs/Int16MultiArray.h
 -
 
 /opt/ros/noetic/include/dynamixel_sdk/dynamixel_sdk.h

@@ -1,21 +1,6 @@
 #include <ros/ros.h>
-#include <std_msgs/Int16MultiArray.h>
+#include <std_msgs/Float32MultiArray.h>
 #include <cmath> 
-
-#define LEG_COUNT_FOR_GAIT 3
-
-namespace TripodGait {
-
-    typedef struct {
-        double x, y, z;
-    } GoalPositions;
-
-    void calculateGaitPosition(GoalPositions positions[LEG_COUNT_FOR_GAIT], double step_length, double step_height, double body_width, double cycle_progress) {
-        // implementation of gait control
-        // needs to set cycle_state on change (first set of legs reach goal_pos)
-    }
-}
-
 
 namespace inverse_kinematics {
 
@@ -23,7 +8,7 @@ namespace inverse_kinematics {
         double theta1, theta2, theta3;
     } JointAngles;
 
-    const double l1 = 0, l2 = 0, l3 = 0; //need to be changed to real values from value (PLACEHOLDER)
+    const double l1 = 1, l2 = 1, l3 = 1; //need to be changed to real values from value (PLACEHOLDER)
     
     JointAngles calculateIK(double goal_x, double goal_y, double goal_z) // not goal_pos in worldframe but goal_pos of the leg_endeffector
     {
@@ -52,25 +37,16 @@ int main(int argc, char **argv)
     ros::init(argc, argv, "invere_kinematics");
     ros::NodeHandle nh;
 
-    ros::Publisher pub = nh.advertise<std_msgs::Int16MultiArray>("goal_positions", 10);
+    ros::Publisher pub = nh.advertise<std_msgs::Float32MultiArray>("goals", 10);
 
     ros::Rate loop_rate(10); 
 
     while (ros::ok()) 
     {
-        std_msgs::Int16MultiArray joint_variables;
+        std_msgs::Float32MultiArray joint_variables;
 
-        /*
-        joint_variables.data should only happen 3 times. all angles are known for one leg per function call
-        LEG 1 Inverese Kinematics
-
-        First pushback needs to be gait_state
-        */
-
-        joint_variables.data.push_back(1); //GAIT
-
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta1)); //goal_pos needs to be changed for every leg
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta2));
+        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(1, 2, 1).theta1)); //goal_pos needs to be changed for every leg
+        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(1, 2, 1).theta2));
         joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta3));
         //LEG 2 Inverese Kinematics
         joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta1)); //goal_pos needs to be changed for every leg
@@ -82,7 +58,6 @@ int main(int argc, char **argv)
         joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta3));
         //value between 0 and 360 degrees
 
-        joint_variables.data.clear();
 
         pub.publish(joint_variables);
     }   
@@ -91,3 +66,4 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
