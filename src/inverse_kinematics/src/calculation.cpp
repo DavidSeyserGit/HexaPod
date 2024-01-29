@@ -8,9 +8,9 @@ namespace inverse_kinematics {
         double theta1, theta2, theta3;
     } JointAngles;
 
-    const double l1 = 4.5, l2 = 6.5, l3 = 13; //need to be changed to real values from value (PLACEHOLDER)
+    const double l1 = 4.5, l2 = 6.5, l3 = 13; 
     
-    JointAngles calculateIK(double goal_x, double goal_y, double goal_z) // not goal_pos in worldframe but goal_pos of the leg_endeffector
+    JointAngles calculateIK(double goal_x, double goal_y, double goal_z) 
     {
         JointAngles angles;
         
