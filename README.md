@@ -1,19 +1,12 @@
-#**Hexapod Project**
+# Hexapod Project
 
 This repository contains the code and documentation for our university (FHTW) project to control a hexapod robot using the Robot Operating System (ROS).
 
-## **Table of Contents**
-
-- [About](#about)
-- [Installation](#installation)
-- [Features](#features)
-- [License](#license)
-
-## **About**
+## About
 
 Our project aims to revive a hexapod robot using ROS, enabling it to perform simple forwards movment. This README provides an overview of the project structure, setup instructions, and guidelines for usage.
 
-## **Installation**
+## Installation
 
 ### Cloning the Repository
 To clone the repository and its submodules, use the following command:
@@ -23,7 +16,6 @@ To clone the repository and its submodules, use the following command:
 ### Setting Up the Submodule
 After the repository is cloned, the submodules need to be initialized:
 
-    cd HexaPod
     git submodule init
     git submodule update
 
@@ -32,12 +24,24 @@ After the repository is cloned, the submodules need to be initialized:
 After the repository is successfully cloned and the submodules initialized, the devel and build folder must be removed.
 If you are on Linux use the following commands:
 
+    cd Hexpaod 
     rm -rf devel && rm -rf build
 
 The repository is now ready to be compiled.
     
     catkin_make
-    
-## **Features**
 
-- **ROS Integration**: Utilizing ROS for communication, control, and coordination of the hexapod robot.
+## Features
+
+## Voraussetzungen
+
+Um das Projekt auszuführen, sind folgende Voraussetzungen erforderlich:
+
+- ROS1 Noetic
+
+## Verwendung
+
+## Lizenz
+
+Dieses Projekt ist unter der [Lizenz] lizenziert - siehe die [LICENSE.md](LICENSE.md)-Datei für weitere Details.
+
