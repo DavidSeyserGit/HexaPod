@@ -1,4 +1,4 @@
-# **Hexapod Project**
+# <span style="color:blue;">**Hexapod Project**</span>
 
 This repository contains the code and documentation for our university (FHTW) project to control a hexapod robot using the Robot Operating System (ROS).
 
