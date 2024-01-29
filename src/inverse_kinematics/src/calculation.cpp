@@ -8,7 +8,7 @@ namespace inverse_kinematics {
         double theta1, theta2, theta3;
     } JointAngles;
 
-    const double l1 = 1, l2 = 1, l3 = 1; //need to be changed to real values from value (PLACEHOLDER)
+    const double l1 = 4.5, l2 = 6.5, l3 = 13; //need to be changed to real values from value (PLACEHOLDER)
     
     JointAngles calculateIK(double goal_x, double goal_y, double goal_z) // not goal_pos in worldframe but goal_pos of the leg_endeffector
     {
@@ -45,19 +45,10 @@ int main(int argc, char **argv)
     {
         std_msgs::Float32MultiArray joint_variables;
 
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(1, 2, 1).theta1)); //goal_pos needs to be changed for every leg
+        //Example writing data -> GoalPos needs to be changed to user input
+        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(1, 2, 1).theta1)); 
         joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(1, 2, 1).theta2));
         joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta3));
-        //LEG 2 Inverese Kinematics
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta1)); //goal_pos needs to be changed for every leg
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta2));
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta3));
-        //LEG 3 Inverese Kinematics
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta1)); //goal_pos needs to be changed for every leg
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta2));
-        joint_variables.data.push_back(static_cast<int16_t>(inverse_kinematics::calculateIK(0.1, 0.1, 0.1).theta3));
-        //value between 0 and 360 degrees
-
 
         pub.publish(joint_variables);
     }   
