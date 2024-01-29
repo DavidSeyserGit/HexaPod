@@ -2,13 +2,6 @@
 
 This repository contains the code and documentation for our university (FHTW) project to control a hexapod robot using the Robot Operating System (ROS).
 
-## Table of Contents
-
-- [About](#about)
-- [Installation](#installation)
-- [Features](#features)
-- [License](#license)
-
 ## About
 
 Our project aims to revive a hexapod robot using ROS, enabling it to perform simple forwards movment. This README provides an overview of the project structure, setup instructions, and guidelines for usage.
@@ -37,7 +30,19 @@ If you are on Linux use the following commands:
 The repository is now ready to be compiled.
     
     catkin_make
-    
+# Projektname
+
 ## Features
 
-- **ROS Integration**: Utilizing ROS for communication, control, and coordination of the hexapod robot.
+## Voraussetzungen
+
+Um das Projekt auszuführen, sind folgende Voraussetzungen erforderlich:
+
+- ROS1 Noetic
+
+## Verwendung
+
+## Lizenz
+
+Dieses Projekt ist unter der [Lizenz] lizenziert - siehe die [LICENSE.md](LICENSE.md)-Datei für weitere Details.
+
