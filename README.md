@@ -4,7 +4,6 @@ This repository contains the code and documentation for our university (FHTW) pr
 
 ## About
 
-Our project aims to revive a hexapod robot using ROS, enabling it to perform simple forwards movment. This README provides an overview of the project structure, setup instructions, and guidelines for usage.
 
 ## Installation
 
