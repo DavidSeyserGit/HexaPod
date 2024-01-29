@@ -30,7 +30,6 @@ If you are on Linux use the following commands:
 The repository is now ready to be compiled.
     
     catkin_make
-# Projektname
 
 ## Features
 
