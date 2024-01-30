@@ -2,6 +2,10 @@
 
 This repository contains the code and documentation for our university (FHTW) project to control a hexapod robot using the Robot Operating System (ROS).
 
+## Requirments
+
+- ROS1 Noetic
+  
 ## Installation
 
 ### Cloning the Repository
@@ -27,21 +31,12 @@ The repository is now ready to be compiled.
     
     catkin_make
 
-## Features
-
-## Requirments
-
-Um das Projekt auszuführen, sind folgende Voraussetzungen erforderlich:
-
-- ROS1 Noetic
-
 ## Usage
 After the code is compiled the package can be sourced.
 
     source /devel/setup.bash
 
 Then the motorcontrol-node and inverse kinematik-node can be started with rosrun.
-
 
 ## Lizenz
 
