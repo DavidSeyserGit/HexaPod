@@ -2,9 +2,6 @@
 
 This repository contains the code and documentation for our university (FHTW) project to control a hexapod robot using the Robot Operating System (ROS).
 
-## About
-
-
 ## Installation
 
 ### Cloning the Repository
