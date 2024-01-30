@@ -32,13 +32,19 @@ The repository is now ready to be compiled.
 
 ## Features
 
-## Voraussetzungen
+## Requirments
 
 Um das Projekt auszuführen, sind folgende Voraussetzungen erforderlich:
 
 - ROS1 Noetic
 
-## Verwendung
+## Usage
+After the code is compiled the package can be sourced.
+
+    source /devel/setup.bash
+
+Then the motorcontrol-node and inverse kinematik-node can be started with rosrun.
+
 
 ## Lizenz
 
