@@ -36,7 +36,7 @@ After the code is compiled the package can be sourced.
 
     source /devel/setup.bash
 
-Then the motorcontrol-node and inverse kinematik-node can be started with rosrun.
+Then the motorcontrol-node and inversekinematic-node can be started with rosrun.
 
 ## Lizenz
 
